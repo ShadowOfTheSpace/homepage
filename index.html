@@ -1,10 +1,282 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Résumé</title>
-  </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+<html id="light-theme">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Résumé</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="resume">
+      <div class="container">
+        <div class="resume__block">
+          <div class="contact-info__header-wraper">
+            <h1 class="contact-info__header">Oleksandr Tkachuk</h1>
+            <button id="dark-theme-button" onclick="toggleTheme()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="contact-info__item-icon" viewBox="0 0 384 512">
+                <path
+                  d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+              </svg>
+            </button>
+            <button id="light-theme-button" onclick="toggleTheme()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="contact-info__item-icon" viewBox="0 0 512 512">
+                <path
+                  d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" />
+              </svg>
+            </button>
+
+          </div>
+          <h3 class="contact-info__sub-header">Trainee/Junior Full Stack Developer</h3>
+
+          <div class="contact_info_container fh">
+            <div class="contact-info__block contact-info__block--center">
+              <img class="contact-info__avatar" src="assets/avatar.jpg" alt="Avatar" />
+            </div>
+            <div class="contact-info__block">
+              <a href="https://www.google.com/maps/place/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2" rel="author"
+                class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192
+                      0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
+                      13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
+                      80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                  </svg>
+                </div>
+                <span>Lviv, Ukraine</span>
+              </a>
+              <a href="mailto:oleksandr.vpro@gmail.com" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                  </svg>
+                </div>
+                <span>oleksandr.vpro@gmail.com</span>
+              </a>
+              <a href="https://t.me/shadow_of_the_space" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path
+                      d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
+                  </svg>
+                </div>
+                <span>Telegram</span>
+              </a>
+              <a href="https://github.com/ShadowOfTheSpace" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  </svg>
+
+                </div>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/oleksandr-tkachuk-2563a42a2" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
+        480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
+        416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96
+        102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1
+        243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9
+        54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2
+        0 79.7 44.3 79.7 101.9V416z"></path>
+                  </svg>
+                </div>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="resume__block">
+          <div class="intro">
+            <div class="intro__icon-wrapper">
+              <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+              </svg>
+            </div>
+            <p class="intro_text">
+              Hi there, I am a motivated Full Stack Developer with no commercial experience. I am here to learn some new
+              things and improve old ones. I hope Binary Studio Academy will help me with it. Meow ^-^
+            </p>
+            <div class="intro__icon-wrapper">
+              <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="resume__block">
+          <div class="skills">
+            <h3 class="skills__header">Skills</h3>
+            <div class="skills-group-list">
+              <div class="skills-group">
+                <h4 class="skills__header">Java</h4>
+                <ul class="skills-items-list">
+                  <li class="skill-item">Java Core</li>
+                  <li class="skill-item">Collections API</li>
+                  <li class="skill-item">Stream API</li>
+                  <li class="skill-item">Reflection API</li>
+                  <li class="skill-item">Spring</li>
+                  <li class="skill-item">Spring Boot</li>
+                  <li class="skill-item">Spring MVC</li>
+                  <li class="skill-item">Spring Data JPA</li>
+                  <li class="skill-item">Spring Security</li>
+                  <li class="skill-item">Maven</li>
+                  <li class="skill-item">Lombok</li>
+                </ul>
+              </div>
+              <div class="skills-group">
+                <h4 class="skills__header">Web</h4>
+                <ul class="skills-items-list">
+                  <li class="skill-item">HTML</li>
+                  <li class="skill-item">CSS</li>
+                  <li class="skill-item">JavaScript</li>
+                  <li class="skill-item">TypeScript</li>
+                  <li class="skill-item">React</li>
+                  <li class="skill-item">Next.js</li>
+                  <li class="skill-item">Tailwind</li>
+                  <li class="skill-item">Prisma ORM</li>
+                  <li class="skill-item">Framer Motion</li>
+                </ul>
+              </div>
+              <div class="skills-group">
+                <h4 class="skills__header">Other</h4>
+                <ul class="skills-items-list">
+                  <li class="skill-item">SQL</li>
+                  <li class="skill-item">Git</li>
+                  <li class="skill-item">OOP</li>
+                  <li class="skill-item">REST</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="resume__block">
+          <div class="main-info fh">
+            <div class="experiences">
+              <h3 class="experiences__header">Experience</h3>
+              <div class="experiences__company">
+                <div class="experiences__company-project">
+                  <a href="https://www.youtube.com/watch?v=oZ0JxnYU6w8&ab_channel=SashaTkachuk">
+                    <span class="experiences__company-project-role">PC Planet</span>
+                  </a>
+                  <h3 class="experiences__company-project-name">Bachelor project</h3>
+                  <p class="experiences__company-project-responsibilities">
+                    My bachelor's project was a web aggregator for PC configuration with component compatibility
+                    check. It consisted of three parts: <a class="project-link"
+                      href="https://github.com/ShadowOfTheSpace/pc-planet-front-end">Front-end part</a> (TypeScript,
+                    React); <a class="project-link"
+                      href="https://github.com/ShadowOfTheSpace/pc-planet-back-end">Back-end part</a> (Java, Spring, MS
+                    SQL Server);
+                    Web-scrapper (Python, Beautiful Soup).
+                    The system used the REST API architecture and supported user authorization and
+                    authentication via Spring Security and JWT. Communication with the database was done using
+                    Spring Data JPA, some queries were written using Spring Data Repository, and more complex
+                    ones, such as multi-criteria filtering products, were written using the Criteria API and Java
+                    Reflection to generate template code. To avoid boilerplate Java code, the Lombok library was also
+                    used.
+                  </p>
+                </div>
+                <div class="experiences__company-project">
+                  <a href="https://shadowofthespace.github.io/vnv-solutions/">
+                    <span class="experiences__company-project-role">VNV Solutions</span>
+                  </a>
+                  <h3 class="experiences__company-project-name">Test project</h3>
+                  <p class="experiences__company-project-responsibilities">
+                    My test task for one of the vacancies was a site using React and TypeScript. Framer Motion
+                    was used for component animations and Zod was used for validation. All code available <a
+                      class="project-link" href="https://github.com/ShadowOfTheSpace/vnv-solutions">here</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-info fv">
+              <div class="additional-info__education">
+                <h3 class="additional-info__education-header">Education</h3>
+                <div class="additional-info__education-university">
+                  <span class="additional-info__education-university-durability">2019-2023</span>
+                  <h3 class="additional-info__education-university-speciality">
+                    Bachelor's degree of Computer Science
+                  </h3>
+                  <p class="additional-info__education-university-name">
+                    Lviv Polytechnic National University
+                  </p>
+                </div>
+              </div>
+              <div class="additional-info__languages">
+                <h3 class="additional-info__languages-header">Languages</h3>
+                <ul>
+                  <li>
+                    <p class="additional-info__languages-item">
+                      Ukrainian (Native)
+                    </p>
+                  </li>
+                  <li>
+                    <p class="additional-info__languages-item">
+                      English (B1)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="additional-info__about">
+                <h3 class="additional-info__about-header">About me</h3>
+                <ul>
+                  <li>
+                    <p class="additional-info__about-item">
+                      Love gaming (The Witcher 3 and Cyberpunk 2077 are masterpieces for me) 🎮
+                    </p>
+                  </li>
+                  <li>
+                    <p class="additional-info__about-item">
+                      Fan of Breaking Bad & Better Call Saul 🧪⚖️💰
+                    </p>
+                  </li>
+                  <li>
+                    <p class="additional-info__about-item">
+                      Watching TikTok for a new programming knowledge (only for it, realy) 😎
+                    </p>
+                  </li>
+                  <li>
+                    <p class="additional-info__about-item">
+                      Love cats and cool PC setups 🐱
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    const currentTheme = localStorage.getItem("homepage-theme") || "light-theme"
+    const htmlElement = document.getElementsByTagName("html")[0]
+    if (htmlElement) {
+      htmlElement.id = currentTheme
+    }
+    function toggleTheme() {
+      if (htmlElement) {
+        htmlElement.id = htmlElement.id === "light-theme" ? "dark-theme" : "light-theme"
+        localStorage.setItem("homepage-theme", htmlElement.id)
+      }
+    }
+  </script>
+</body>
+
 </html>
