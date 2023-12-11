@@ -49,6 +49,7 @@ body {
   box-shadow: 1px 1px 7px 7px var(--shadow-color);
   padding: 30px 0;
   max-width: 900px;
+  border-radius: 20px;
 }
 
 .resume__block {
