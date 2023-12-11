@@ -23,6 +23,7 @@ body {
   --border-color: #AF8FE9;
   --text-decoration-color: #AF8FE9;
   --item-color: white;
+  --shadow-color: #f5f5f5;
 }
 
 .container {
@@ -40,13 +41,12 @@ body {
 .fv {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .resume {
   margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #f5f5f5;
+  border: 1px solid var(--shadow-color);
+  box-shadow: 1px 1px 7px 7px var(--shadow-color);
   padding: 30px 0;
   max-width: 900px;
 }
@@ -157,7 +157,7 @@ body {
   vertical-align: text-bottom;
 }
 
-.intro__icon-wrapper:last-child{
+.intro__icon-wrapper:last-child {
   align-self: flex-end;
 }
 
@@ -270,7 +270,9 @@ body {
   text-align: left;
   margin-bottom: 10px;
 }
-.additional-info__about ul, .additional-info__languages ul{
+
+.additional-info__about ul,
+.additional-info__languages ul {
   list-style: disc;
 }
 
@@ -290,7 +292,6 @@ body {
 
 .additional-info__about-item {
   color: var(--secondary-text-color);
-  /* margin-bottom: 10px; */
 }
 
 .skills-group-list {
